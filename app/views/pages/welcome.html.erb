@@ -1,1 +1,16 @@
 <h1> <%=@first_var%> </h1>
+
+<ul>
+  <%	 @days = [ "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+  ] %>
+
+  <% [1,2,3,4,5,6,7].each do|e| %>
+    <li><%= e %></li>
+  <% end %>
+</ul>
