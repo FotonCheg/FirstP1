@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def welcome
     @first_var = 'Hi my dear friend, it is Ruby tutorial'
-    Article.create(title:"Title", body:"My long body of article")#Создали объект статьи и сразу же сохранили его с данными в БД
+
     @article_from_db = Article.all #Достали все статьи из БД и записали в переменную
 
     #Бежим по всем статьям и достаем из них данные

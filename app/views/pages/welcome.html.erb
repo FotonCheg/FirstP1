@@ -14,3 +14,16 @@
     <li><%= e %></li>
   <% end %>
 </ul>
+
+<form action="/create_new_articles" method="get">
+   <p>Title of task: <input name="title"></p>
+   <p>Body of task: <input name="body">  </p>
+   <p><input type="submit"></p>
+</form>
+
+<ul>
+  <% @article_from_db.each do |elem| %>
+    <li><%= elem.title + " " + elem.body %></li>
+  <% end %>
+
+</ul>
